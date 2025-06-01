@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!-- Defining Car bean-->
+        <bean id="car" class="org.example.Car"/>
+
+<!--        Define Treveller bean-->
+
+        <bean id="traveller" class="org.example.Traveller">
+            <constructor-arg ref="car" />
+        </bean>
+</beans>
